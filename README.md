@@ -1,2 +1,2 @@
 # Networking-Labs
-Test labs fro practice
+Test labs for practice
