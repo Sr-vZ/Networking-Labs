@@ -1,0 +1,12 @@
+hostname CE_Delhi
+!
+interface GigabitEthernet0/1
+ ip address 10.10.10.1 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router bgp 6410
+ bgp log-neighbor-changes
+ neighbor 10.10.10.2 remote-as 64
+!

@@ -1,0 +1,12 @@
+hostname CE_Kolkata
+!
+interface GigabitEthernet0/1
+ ip address 70.70.70.1 255.255.255.252
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router bgp 6470
+ bgp log-neighbor-changes
+ neighbor 70.70.70.2 remote-as 64
+!
