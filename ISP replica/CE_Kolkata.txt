@@ -2,6 +2,7 @@ hostname CE_Kolkata
 !
 interface GigabitEthernet0/1
  ip address 70.70.70.1 255.255.255.252
+ no sh
  duplex auto
  speed auto
  media-type rj45
