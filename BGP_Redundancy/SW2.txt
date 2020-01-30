@@ -1,0 +1,24 @@
+hostname SW_2
+!
+!
+interface GigabitEthernet0/0
+ media-type rj45
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ no switchport
+ no sh
+ ip address 20.20.20.2 255.255.255.0
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ no switchport
+ no sh
+ ip address 40.40.40.2 255.255.255.0
+ standby 1 ip 40.40.40.3
+ standby 1 preempt
+ negotiation auto
+!
+ip route 0.0.0.0 0.0.0.0 20.20.20.1
+!
+end

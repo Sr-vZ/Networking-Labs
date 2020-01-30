@@ -1,0 +1,28 @@
+hostname CE_2
+!
+interface GigabitEthernet0/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 30.30.30.6 255.255.255.252
+ no sh
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 20.20.20.1 255.255.255.0
+ no sh
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router bgp 65100
+ bgp log-neighbor-changes
+ neighbor 30.30.30.5 remote-as 65
+!
+end
