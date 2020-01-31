@@ -14,8 +14,8 @@ interface GigabitEthernet0/1
 interface GigabitEthernet0/2
  no switchport
  no sh
- ip address 10.10.10.130 255.255.255.0
- standby 1 10.10.10.64
+ ip address 20.20.20.2 255.255.255.0
+ standby 1 20.20.20.3
  standby 1 preempt
  negotiation auto
 !
