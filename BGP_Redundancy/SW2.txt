@@ -8,17 +8,17 @@ interface GigabitEthernet0/0
 interface GigabitEthernet0/1
  no switchport
  no sh
- ip address 20.20.20.2 255.255.255.0
+ ip address 10.10.10.129 255.255.255.0
  negotiation auto
 !
 interface GigabitEthernet0/2
  no switchport
  no sh
- ip address 40.40.40.2 255.255.255.0
- standby 1 ip 40.40.40.3
+ ip address 10.10.10.130 255.255.255.0
+ standby 1 10.10.10.64
  standby 1 preempt
  negotiation auto
 !
-ip route 0.0.0.0 0.0.0.0 20.20.20.1
+ip route 0.0.0.0 0.0.0.0 10.10.10.128
 !
 end
